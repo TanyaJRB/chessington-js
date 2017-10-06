@@ -16,9 +16,6 @@ export default class Rook extends Piece {
             if (i != currentSquare.col){
                 squares.push(Square.at(currentSquare.row, i))
             }
-        }
-
-        for (let i=0; i<8; i++){
             if (i != currentSquare.row){
                 squares.push(Square.at(i, currentSquare.col))
             }
