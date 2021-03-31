@@ -30,7 +30,6 @@ describe('Bishop', () => {
         board.setPiece(Square.at(2, 3), bishop);
 
         const moves = bishop.getAvailableMoves(board);
-
         moves.should.have.length(11);
     });
 });
