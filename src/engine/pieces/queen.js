@@ -27,7 +27,7 @@ export default class Queen extends Piece {
             }
         }
 
-        let squaresRefined = squares.filter(square => square.row !== currentSquare.row && square.col !== currentSquare.col);
+        let squaresRefined = squares.filter(square => !square.equals(currentSquare));
 
         for (let i=0; i<8; i++){
             if (i != currentSquare.col){

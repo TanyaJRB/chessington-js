@@ -31,8 +31,8 @@ export default class Knight extends Piece {
         squares.push(Square.at(xb, yd));
         //Lateral-focus
         squares.push(Square.at(xc, ya));
-        squares.push(Square.at(xd, ya));
         squares.push(Square.at(xc, yb));
+        squares.push(Square.at(xd, ya));
         squares.push(Square.at(xd, yb));
         
         let squaresRefined = squares.filter(square => square.row <= 7 && square.col <= 7 && square.row >= 0 && square.col >= 0);

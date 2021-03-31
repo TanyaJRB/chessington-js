@@ -27,7 +27,7 @@ export default class Bishop extends Piece {
             }
         }
 
-        let squaresRefined = squares.filter(square => square.row !== currentSquare.row && square.col !== currentSquare.col);
+        let squaresRefined = squares.filter(square => !square.equals(currentSquare));
 
         return squaresRefined;
     }
